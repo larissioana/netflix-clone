@@ -1,0 +1,19 @@
+
+
+.cardImg {
+    border-radius: .4rem;
+    object-fit: cover;
+    object-position: center;
+   
+  }
+  .container{
+    margin-top:6rem;
+    cursor:pointer;
+  }
+  .motionWrapper{
+    position:relative;
+    /* display:inline-block; */
+  }
+  .motionWrapper:hover{
+    z-index:99;
+  }
