@@ -30,7 +30,7 @@
 .series{
     font-size:.875rem;
     line-height: 1.25rem;
-    color:var(--gray20);
+    color:var(--red10);
     align-self: center;
     margin-bottom:2rem;
 }
@@ -43,10 +43,11 @@
 }
 .subtitle{
     font-size:clamp(1.2rem, 2vw,1.4rem);
-    line-height: 1rem;
+    line-height: 2rem;
     color:var(--white10);
     -webkit-text-stroke:1px gray;
     margin-top:.7rem;
+    max-width: 400px;
 }
 .playBtn{
     display:flex;

@@ -2,13 +2,13 @@ import styles from '/components/banner/banner.module.css';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-
 const Banner=({title,subTitle,imgUrl,videoId})=>{
     const router=useRouter();
+    
     const handlePlay=()=>{
-        console.log('PLAY')
-        router.push(`video/${videoId}`)
-    }
+    router.push(`video/${videoId}`)
+    };
+
     return(
        <div className={styles.container}>
         <div className={styles.leftWrapper}>
@@ -27,7 +27,7 @@ const Banner=({title,subTitle,imgUrl,videoId})=>{
             </div>
             </div>
             <div className={styles.bannerImg} style={{backgroundImage: `url(${imgUrl})`, width:'100%',height:'100%',position:'absolute',
-            backgroundSize:'cover',backgroundPosition:'50% 50%',backgroundRepeat:'no-repeat'
+            backgroundSize:'cover',backgroundPosition:'100% 0%',backgroundRepeat:'no-repeat'
         }}></div>
         </div>
     )

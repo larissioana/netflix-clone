@@ -8,6 +8,7 @@
     --gradient-stops: var(--gradient-from), var(--gradient-to, rgba(0, 0, 0, 0));
     width: 100%;
     z-index: 50;
+    margin:0 auto;
    
   }
  
@@ -16,6 +17,7 @@
     padding-right: 1rem;
     display: flex;
     padding: 1.25rem;
+   
   }
  
   .logoLink {
@@ -34,12 +36,16 @@
   .navItems {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    margin-left: 1.5rem;
-    font-size: 0.875rem;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-left: 1.7rem;
+    font-size: clamp(.9rem, 2vw, .8rem);
     font-size: clamp(1rem,2vw,1.3rem);
     line-height: 1.25rem;
     list-style: none;
+    margin-right:1rem;
+   
   }
  
   .navItem {
@@ -70,7 +76,7 @@
   }
  
   .username {
-    font-size: 1rem;
+    font-size: .8rem;
   }
  
   .navDropdown {
@@ -109,23 +115,11 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
-  /* @media (min-width: 768px) {
-    .wrapper {
-      padding-left: 4rem;
-      padding-right: 4rem;
-      flex-direction: row;
-      align-items: center;
+
+  @media (max-width:600px){
+    .navItems{
+      flex-direction: column;  
+      margin-left:-3rem;
     }
- 
-    .logoLink {
-      margin-bottom: 0px;
-    }
- 
-    .navItems {
-      margin-left: 3rem;
-    }
- 
-    .navItem {
-      margin-right: 1.25rem;
-    }
-  } */
+  
+  }

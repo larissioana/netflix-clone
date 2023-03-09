@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from '../card/card.module.css';
 import { useState } from "react";
 import { motion } from "framer-motion";
-import cls from "classnames";
+
 
 const Card=({imgUrl='/static/image.jpg',id})=>{
     const[imgSrc,setImgSrc]=useState(imgUrl);
