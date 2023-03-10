@@ -109,7 +109,7 @@ const handleToggleDislike = async () => {
         type="text/html"
         width="100%"
         height="390"
-        src={`http://www.youtube.com/embed/${videoId}?enablejsapi=0&origin=http://example.com&controls=0&rel=0`}
+        src={`https://www.youtube.com/embed/${videoId}?enablejsapi=0&origin=http://example.com&controls=0&rel=0`}
         framerborder="0">
         </iframe>
         <div className={styles.likeDislikeWrapper}>
