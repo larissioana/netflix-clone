@@ -1,21 +1,34 @@
-.container{
-    color:var(--black50);
-    padding-left:1rem;
-    padding-right:1rem;
-    margin-top:4rem;
-}
-.title{
-    color:var(--white10);
+.container {
+    color: var(--blue10);
+    background-color: --var(--black50);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top:3rem;
+  }
+  
+  .title {
+    color: var(--white10);
     font-weight: 700;
-    font-size:clamp(1.5rem,2vw,2rem);
-}
-.cardWrapper{
+    font-size: 2rem;
+  }
+  
+  .cardWrapper {
     display: flex;
-    padding-top:1.8rem;
-    padding-bottom:1.5rem;
-    margin-top:-5rem;
-    margin-right:0.75rem;
-    overflow-x:scroll;
-    scroll-behavior: smooth;
+    padding-top: 1.7rem;
+    padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-right: 0.75rem;
+    overflow-x: scroll;
     overflow-y: hidden;
-}
+  }
+  
+  .cardImg:hover {
+    z-index: 50;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }

@@ -1,7 +1,7 @@
 /* Source code : https://projects.lukehaas.me/css-loaders/ */
 
 .loader {
-    color: #ffffff;
+    color: var(--red10);
     font-size: 20px;
     margin: 100px auto;
     width: 1em;
